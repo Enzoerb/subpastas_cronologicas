@@ -1,4 +1,4 @@
-mkdir "$(date +'%d-%m-%Y')";
-gzip *{txt,csv} -S zip;
-mv *{txtzip,csvzip} "$(date +'%d-%m-%Y')";
+mkdir -p "$(date +'%d-%m-%Y')";
+gzip *{txt,csv} -S ".zip";
+mv *{"txt.zip","csv.zip"} "$(date +'%d-%m-%Y')";
 ls -c -d */;
